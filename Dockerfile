@@ -4,5 +4,5 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/carm-0.0.1-SNAPSHOT.jar carm.jar
-EXPOSE 8092
+EXPOSE 8091
 ENTRYPOINT ["java","-jar","carm.jar"]
