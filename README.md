@@ -30,12 +30,15 @@ git clone <repository-url>
 cd car-management-system
 ```
 ### Configure Database
+```
 Update the database details in src/main/resources/application.properties:
 spring.datasource.url=jdbc:mysql://<DATABASE_HOST>:<PORT>/<DATABASE_NAME>
 spring.datasource.username=<USERNAME>
 spring.datasource.password=<PASSWORD>
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
+
+```
 ### Run the Application
 
 Run main file 
@@ -46,6 +49,7 @@ The application will be available at: http://localhost:8091.
 
 Local: http://localhost:8091 
 
+```
 HTTP Method	         Endpoint	                          Description
 GET	              /api/car/getAllCar	             Retrieve all cars with pagination and sorting.
 POST             	/api/car/addCar                  Add a new car.
@@ -53,6 +57,7 @@ PUT	              /api/car//updateCar/{id}       	 Update an existing car by ID.
 DELETE	          /api/car/deleteCar/{id}   	     Delete a car by ID.
 GET               /api/car/search     	           Search cars globally by any attribute.
 
+```
 
 ### Technologies Used
 Backend Framework: Spring Boot
